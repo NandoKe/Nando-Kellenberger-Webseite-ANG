@@ -1,0 +1,129 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --nk-primary: #1d1e21;
+    --nk-secondary: #2E2F30;
+    --nk-text: #4a4d4f;
+    --nk-light: #D0D4D9;
+    --nk-accent: #489DB0;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat", serif;
+    min-width: 0;
+    min-height: 0;
+    height: 100vh;
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.5em;
+    color: var(--nk-primary);
+    margin-bottom: 1vw;
+    margin-top: 1.5vw;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.5em;
+    color: var(--nk-secondary);
+}
+
+p {
+    font-size: 1.2em;
+    color: var(--nk-text);
+}
+
+button {
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    background-color: var(--nk-accent);
+    color: whitesmoke;
+    font-size: 1em;
+    border: 0;
+    border-radius: 5px;
+    padding: 1.2vw 2vw;
+    margin: 1vw 0;
+
+    &:hover {
+        transition-duration: .6s;
+        background-color: #34727f;
+    }
+
+    &:focus {
+        outline: #5dd5ed;
+    }
+}
+
+a {
+    color: var(--nk-accent);
+    text-decoration: underline;
+
+    &:hover {
+        color: #59c5dd;
+        transition-duration: 0.6s;
+    }
+}
+
+section {
+    padding: 0;
+    background-color: var(--nk-light);
+    padding: 4vw;
+}
+
+input[type="text"], input[type="email"] {
+    font-family: 'Montserrat';
+    padding: 1em 1.5em;
+    border: 0.25px solid var(--nk-primary);
+    border-radius: 7px;
+
+    &:focus {
+        outline: none
+    }
+
+    &:hover {
+        background-color: #f3f3f3;
+        transition-duration: 0.2s;
+    }
+}
+
+textarea {
+    font-family: 'Montserrat';
+    padding: 1em 1.5em;
+    border: 0.25px solid var(--nk-primary);
+    border-radius: 7px;
+    resize: vertical;
+    min-height: 10vh;
+    max-height: 50vh;
+
+    &:hover {
+        background-color: #f3f3f3;
+        transition-duration: 0.2s;
+    }
+
+    &:focus {
+        outline: none
+    }
+}
+
+label {
+    font-size: 0.9em;
+    margin-bottom: -0.6em;
+    color: var(--nk-text);
+}

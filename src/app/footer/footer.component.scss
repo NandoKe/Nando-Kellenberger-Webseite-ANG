@@ -1,0 +1,34 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3em;
+    max-width: 100%;
+
+    background-color: var(--nk-primary);
+    color: var(--nk-light) !important;
+}
+
+p {
+    color: var(--nk-light);
+    font-size: 0.7em; 
+
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+li {
+    color: var(--nk-light);
+    cursor: pointer;
+}

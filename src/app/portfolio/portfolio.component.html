@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com;">
+<section class="photoSection">
+  <h1>Portfolio</h1>
+  <h2>Fotos</h2>
+  
+  <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="gallery-container" *ngFor="let photo of photos">
+      <a data-lg-size="480-475-480, 800-791-800, 1406-1390" class="gallery-item"
+         data-src=""
+         data-responsive=""
+         data-sub-html="<h4>Photo by - Nando Kellenberger </h4>">
+        <img class="img-responsive"
+         [src]="photo.baseUrl" [alt]="photo.filename" />
+      </a>
+  </lightgallery>
+  
+</section>

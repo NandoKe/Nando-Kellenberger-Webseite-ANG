@@ -1,0 +1,13 @@
+.intro {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 4vw;
+    margin: auto;
+
+    .introImage {
+        width: 40%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
